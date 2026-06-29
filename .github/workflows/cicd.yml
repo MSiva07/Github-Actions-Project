@@ -52,7 +52,7 @@ security-check:
     - name: Gitleaks Code Scan
       run: gitleaks detect source . -r gitleaks-report.json -f json
 
-  test:
+test:
     runs-on: ubuntu-latest
     needs: security-check
     steps:
